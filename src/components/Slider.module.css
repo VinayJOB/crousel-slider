@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+  /* height: 234px; */
+  display: flex;
+  /* background-color: coral; */
+  position: relative;
+  overflow: hidden;
+}
+/* .banner {
+  width: 100%;
+} */
+.arrow {
+  /* width: 50px;
+  height: 50px;
+  background-color: #fff7f7; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #191515;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  transition: all 0.5s ease;
+  /* transform: translateX(-50vw); */
+}
+.slide {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.imgContainer {
+  width: 100%;
+  height: 100%;
+}
+.banner {
+  height: 100%;
+  width: 100%;
+}
+.threeDots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+}
+.threeDotsWrapper {
+  display: inline;
+}
+.dotOne,
+.dotTwo,
+.dotThree {
+  color: #615b59;
+  width: 6px;
+  margin: 5px;
+  cursor: pointer;
+}
+.dotColor {
+  color: white;
+}
+
+/* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */
+
+/* Responsive for Tablets screen  */
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* Responsive for laptop screen  */
+@media screen and (min-width: 1000px) {
+  .container {
+    height: 90vh;
+  }
+  .dotOne,
+  .dotTwo,
+  .dotThree {
+    width: 10px;
+    margin: 5px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
